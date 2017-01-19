@@ -85,7 +85,8 @@ h2:after {
 /*-------------BUTTONS------------------*/
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit]{
 	display: inline-block;
 	padding: 10px 30px;
 	font-weight: 300;
@@ -95,7 +96,8 @@ h2:after {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit]{
 	background-color: #16a085;
 	border: 1px solid #16a085;
 	color: #fff;
@@ -109,7 +111,9 @@ h2:after {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
 	background-color: #1ccdaa;
 }
 
@@ -122,6 +126,30 @@ h2:after {
 .btn-ghost:active {
 	border: 1px solid #1ccdaa;
 	color: #fff;
+}
+
+/*-------------ICONS----------------*/
+
+.icon-small {
+	display: inline-block;
+	width: 20px;
+	color: #16a085;
+	font-size: 120%;
+	line-height: 120%;
+	margin-top: -5px;
+}
+
+/*---------LINKS-------------*/
+a:link,
+a:visited {
+	color: #16a085;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	font-weight: 400;
 }
 
 /*----------------------------------------*/
@@ -183,8 +211,106 @@ header {
 /* SECTION-PROJECTS */
 /*----------------------------------------*/
 
-.logo-icon{
+.section-projects {
+	background-color: #f4f4f4;
+}
+
+.logo-icon {
 	height: 50px;
 	width: auto;
 	margin: 10px 5px;
 }
+
+.apps-showcase {
+	list-style: none;
+}
+
+.app-feature {
+	margin-bottom: 5px;
+}
+
+/*----------------------------------------*/
+/* CONTACT FORM */
+/*----------------------------------------*/
+
+.contact-form {
+	width: 60%;
+	margin: 0 auto;
+}
+
+input[type=text], 
+input[type=email],
+textarea {
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+	outline: none;
+	border: 2px solid #16a085;
+}
+
+/*----------------------------------------*/
+/* FOOTER */
+/*----------------------------------------*/
+
+footer {
+	background-color: #333;
+	padding: 50px;
+	font-size: 80%;
+}
+
+.footer-nav {
+	list-style: none;
+	float: left;
+}
+
+.social-links {
+	list-style: none;
+	float: right;
+}
+
+.footer-nav li,
+.social-links li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+	margin: 0;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+	font-size: 180%;
+	color: #16a085;
+	transition: color 0.5s;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+	color: #fff;
+}
+
+footer p {
+	color: #888;
+	text-align: center;
+	line-height: 130%;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 20px;
+	
+}
+
+
+
+
