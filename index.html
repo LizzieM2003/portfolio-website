@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>My Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Liz Mendes is a web developer currently on the market for web development jobs. She has a particular interest in developing React applications.">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="resources/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="resources/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="resources/favicons/manifest.json">
+		<link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="resources/favicons/favicon.ico">
+		<meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#000000">
+		
+		<title>Liz Mendes</title>
 		<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+		<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet">
 	</head>
 	<body>
 		<header>
 			<nav>
 				<div class="row">
-					<img class="logo" src="resources/img/logo.svg" alt="computer">
-					<ul class="main-nav">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Contact</a></li>
+					<img class="logo animated pulse" src="resources/img/logo.svg" alt="computer">
+					<ul class="main-nav js--main-nav">
+						<li><a href="#me">About</a></li>
+						<li><a href="#projects">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
+					<a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
 				</div>
 			</nav>
 			<div class="hero-text-box">
-				<h1>I'm Liz Mendes.<br>I want a web developer job.</h1>
-				<a class="btn btn-full" href="#">More about me</a>
-				<a class="btn btn-ghost" href="#">See my work</a>
+				<h1>I'm Liz Mendes.<br>I am now a web developer.</h1>
+				<a class="btn btn-full js--scroll-to-me" href="#">More about me</a>
+				<a class="btn btn-ghost js--scroll-to-projects" href="#">See my work</a>
 			</div>
 		</header>
 		
-		<section class="section-me">
-			<div class="row">
+		<section class="section-me js--section-me" id="me">
+			<div class="row js--wp-1">
 				<h2>Some blurb about me</h2>
-				<p class="long-copy">Hello, I'm Liz. I have approximately 20 years experience of designing, developing and maintaining Oracle relational database systems. However my real interest is in developing websites and web apps, so last year I gave up my job so I could devote my time to studying web development. I have had so much fun studying - being a programmer at heart I have particularly enjoyed getting to grips with JavaScript and applying my new found skills...</p>
+				<p class="long-copy">Hello, I'm Liz. I have approximately 20 years experience of designing, developing and maintaining Oracle relational database systems. However my real interest is in developing websites and web apps, so last year I gave up my job so I could devote my time to studying web development. Having a masters degree in IT and a computing background I felt confident that I would be successful with a course of self study. I started with a number of courses on Udemy, edX and egghead.io covering HTML5, CSS3 and JavaScript. It surprised me how much there was to learn with just these three subject areas alone and I still discover something new every day. </p>
+				
+				<p class="long-copy">In order to make myself a more appealing prospect for employers I also decided that I should become familiar with at least one or two JavaScript frameworks as well as server side technologies. I attended a number of JavaScript meetups to find out more from the JavaScript community about the popular frameworks currently out there and after dabbling a bit with Angular 2 I settled on React. React's API is extremely simple to use compared with Angular 2's and there is such a rich ecosystem of libraries that you can use with React. I particularly enjoyed incorporating Redux into the applications I built with React - the concept of a centralised application state updated by reducers consuming actions made so much sense to me. </p>
 				
 				<p class="long-copy">Pommy ipsum bloody shambles blimey absolute easy peasy two weeks on't trot sod's law man and his whippet, jolly hockey sticks utter shambles rambunctious brilliant copped a bollocking pants don't get your knickers in a twist got a lot of brass ask your mother if, mush blighty the old bill cheerio a reet bobbydazzler one would like pompous. Chinwag nutter hadn't done it in donkey's years manky treacle blighty, nowt 'tis mince pies any road, best be off, bargain Betty how's your father you 'avin a laugh doofer. Moriarty chaps pulled out the eating irons fish fingers and custard Sherlock wibbly-wobbly timey-wimey stuff macca, earwig hadn't done it in donkey's years blimey see a man about a dog.</p>
 			</div>
 		</section>
 		
-		<section class="section-projects">
+		<section class="section-projects js--section-projects" id="projects">
 			<div class="row">
 				<h2>My Projects</h2>
 				<p class="long-copy">This section will soon have links to some of the projects I've been working on. These will include React applications, vanilla JS applications and Node JS applications. Visit again soon to check them out!</p>
 			</div>
 				
-				<div class="row">
+				<div class="row js--wp-2">
 					<div class="col span-1-of-3 box">
 						<img class="logo-icon" src="resources/img/JS.svg" alt="JavaScript logo">
 						<h3>JavaScript applications</h3>
 						
-						<ul class="apps-showcase">
+						<div class="apps-showcase">
 							<div class="app-feature">
 								<i class="ion-ios-play icon-small"></i> 
 								<a href="#">JS app 1</a>
@@ -60,14 +78,14 @@
 								<i class="ion-ios-play icon-small"></i>
 								<a href="#">JS app 3</a>
 							</div>
-						</ul>
+						</div>
 					</div>
 					
 					<div class="col span-1-of-3 box">
 						<img class="logo-icon" src="resources/img/reactjs.svg" alt="React JS logo">
 						<h3>React applications</h3>
 						
-						<ul class="apps-showcase">
+						<div class="apps-showcase">
 							<div class="app-feature">
 								<i class="ion-ios-play icon-small"></i>
 								<a href="#">React app 1</a>
@@ -80,14 +98,14 @@
 								<i class="ion-ios-play icon-small"></i>
 								<a href="#">React app 3</a>
 							</div>
-						</ul>
+						</div>
 					</div>
 					
 					<div class="col span-1-of-3 box">
 						<img class="logo-icon" src="resources/img/nodejs.svg" alt="NodeJS logo">
 						<h3>Node JS applications</h3>
 						
-						<ul class="apps-showcase">
+						<div class="apps-showcase">
 							<div class="app-feature">
 								<i class="ion-ios-play icon-small"></i>
 								<a href="#">Node app 1</a>
@@ -100,12 +118,12 @@
 								<i class="ion-ios-play icon-small"></i>
 								<a href="#">Node app 3</a>
 							</div>
-						</ul>
+						</div>
 					</div>	
 				</div>
 		</section>
 		
-		<section class="section-form">
+		<section class="section-form" id="contact">
 			<div class="row">
 				<h2>I'm happy to hear from you</h2>
 			</div>
@@ -175,6 +193,15 @@
 				</p>
 			</div>
 		</footer>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+		<script src="vendors/js/jquery.waypoints.min.js"></script>
+		<script src="http://maps.google.com/maps/api/js"></script>
+		<script src="vendors/js/gmaps.js"></script>
+		<script src="resources/js/script.js"></script>
 		
 	</body>
 </html>
