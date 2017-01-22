@@ -161,12 +161,27 @@ a:active {
 /*----------------------------------------*/
 
 header {
-	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/computer.jpg);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/computer.jpg);
+/*
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/computer-min.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/computer-min.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	height: 100vh;
+*/
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/computer-lowres.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/computer-lowres.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	
 }
 
 .hero-text-box {
@@ -305,6 +320,23 @@ input[type=email]:focus,
 textarea:focus {
 	outline: none;
 	border: 2px solid #16a085;
+}
+
+.form-messages {
+	width: 70%;
+	margin 0 auto;
+	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+.success {
+	background-color: rgba(17, 165, 40, 0.8);
+}
+
+.error {
+	background-color: rgba(244, 65, 65, 0.8);
 }
 
 /*----------------------------------------*/

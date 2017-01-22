@@ -54,7 +54,9 @@
 				
 				<p class="long-copy">In order to make myself a more appealing prospect for employers I also decided that I should become familiar with at least one or two JavaScript frameworks as well as server side technologies. I attended a number of JavaScript meetups to find out more from the JavaScript community about the popular frameworks currently out there and after dabbling a bit with Angular 2 I settled on React. React's API is extremely simple to use compared with Angular 2's and there is such a rich ecosystem of libraries that you can use with React. I particularly enjoyed incorporating Redux into the applications I built with React - the concept of a centralised application state updated by reducers consuming actions made so much sense to me. </p>
 				
-				<p class="long-copy">Pommy ipsum bloody shambles blimey absolute easy peasy two weeks on't trot sod's law man and his whippet, jolly hockey sticks utter shambles rambunctious brilliant copped a bollocking pants don't get your knickers in a twist got a lot of brass ask your mother if, mush blighty the old bill cheerio a reet bobbydazzler one would like pompous. Chinwag nutter hadn't done it in donkey's years manky treacle blighty, nowt 'tis mince pies any road, best be off, bargain Betty how's your father you 'avin a laugh doofer. Moriarty chaps pulled out the eating irons fish fingers and custard Sherlock wibbly-wobbly timey-wimey stuff macca, earwig hadn't done it in donkey's years blimey see a man about a dog.</p>
+				<p class="long-copy">On the server side I am studying Node JS and how to create APIs using the Express framework. I believe NodeJS offers a number of advantages over other server side technologies - I can still use JavaScript (there is enough to learn without having to learn another programming language) and the fact that it is single threaded, event driven and non-blocking means it is extremely performant and scalable.  I am also learning about NoSQL databases particularly MongoDB and I will be creating an app with a MongoDB database at the back end which I will post a link to soon.</p>
+				
+				<p class="long-copy">During the next few weeks I will add links to this page of various projects I have been working on. In the meantime if you have any queries please feel free to contact me via the form below and I will get back to you asap!</p>
 			</div>
 		</section>
 		
@@ -136,13 +138,15 @@
 				<form method="post" action="mailer.php" class="contact-form">
 					<div class="row">
 						
-						<div class="form-messages success">
-							Thank you! Your message has been sent.
-						</div>
-						
-						<div class="form-messages error">
-							Oops! Something went wrong. Please try again.
-						</div>
+						<?php 
+							if($_GET['success'] == 1) {
+								echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
+							}
+
+							if($_GET['success'] == -1) {
+								echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again.</div>";
+							}
+						?>		
 					</div>
 						
 					<div class="row">	

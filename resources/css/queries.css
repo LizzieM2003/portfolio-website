@@ -10,9 +10,15 @@
 }
 
 /* Small tablet to big tablet: from 768 to 1023px */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
 	
-	body { font-size: 18px; }
+	body { 
+		font-size: 18px;
+	}
+	
+	header {
+		background-attachment: scroll;
+	}
 	
 	section { padding: 60px 0; }
 	
