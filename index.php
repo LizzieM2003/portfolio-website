@@ -63,7 +63,7 @@
 		<section class="section-projects js--section-projects" id="projects">
 			<div class="row">
 				<h2>My Projects</h2>
-				<p class="long-copy">This section will soon have links to some of the projects I've been working on. These will include React applications, vanilla JS applications and Node JS applications. Visit again soon to check them out!</p>
+				<p class="long-copy">This section will contain more links to some of the projects I've been working on. These will include React applications, vanilla JS applications and Node JS applications. Visit again soon to check them out!</p>
 			</div>
 				
 				<div class="row js--wp-2">
@@ -74,7 +74,7 @@
 						<div class="apps-showcase">
 							<div class="app-feature">
 								<i class="ion-ios-play icon-small"></i> 
-								<a href="#">JS app 1</a>
+								<a href="resources/html/rgb-color-game.html">RGB Colour Game</a>
 							</div>
 							<div class="app-feature">
 								<i class="ion-ios-play icon-small"></i>
